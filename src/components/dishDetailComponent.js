@@ -56,6 +56,7 @@ const renderDish=(dish)=>
         {
             return(
             <React.Fragment>
+                <div className="row">
             <div className="col-12 col-md-5 m-1">
             <Card>
                 <CardImg width="100%" src={dish.image} alt={dish.name} />
@@ -68,6 +69,7 @@ const renderDish=(dish)=>
             <div className="col-12 col-md-5 m-1" >
             <h4>Comments</h4>
             {renderComments(dish.comments)}
+            </div>
             </div>
             </React.Fragment>
             )
